@@ -1,294 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hsuan Lo</title>
-  <style>
-    :root {
-      --bg: #fbfbfd;
-      --text: #1d1d1f;
-      --muted: #6e6e73;
-      --line: #e5e5e7;
-      --link: #0066cc;
-      --card: rgba(255, 255, 255, 0.72);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    .wrap {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 28px 22px 80px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 6px 0 28px;
-      font-size: 0.95rem;
-    }
-
-    .nav-name {
-      font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
-
-    .hero {
-      padding: 48px 0 40px;
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(2.6rem, 7vw, 4.8rem);
-      line-height: 1.02;
-      letter-spacing: -0.045em;
-      font-weight: 700;
-    }
-
-    .hero .sub {
-      margin-top: 14px;
-      font-size: 1.2rem;
-      color: var(--muted);
-      letter-spacing: -0.01em;
-    }
-
-    .hero .intro {
-      max-width: 700px;
-      margin-top: 24px;
-      font-size: 1.08rem;
-      color: #333336;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px 18px;
-      margin-top: 28px;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: var(--link);
-      font-weight: 500;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 34px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    h2 {
-      margin: 0 0 18px;
-      font-size: 1.35rem;
-      letter-spacing: -0.02em;
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 10px 0;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      border-radius: 18px;
-      padding: 18px 18px;
-      backdrop-filter: saturate(180%) blur(18px);
-      -webkit-backdrop-filter: saturate(180%) blur(18px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
-    }
-
-    .item-title {
-      font-weight: 600;
-      margin-bottom: 6px;
-      letter-spacing: -0.01em;
-    }
-
-    .item-meta {
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    .pub {
-      margin-bottom: 14px;
-    }
-
-    .footer {
-      padding-top: 28px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    @media (min-width: 720px) {
-      .grid.two {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  </style>
+  <title>Lo Hsuan</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <nav>
-      <div class="nav-name">Lo Hsuan</div>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">Lo Hsuan</a>
       <div class="nav-links">
-        <a href="#about">About</a>
+        <a href="#background">Background</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <header class="hero">
-      <h1>Lo Hsuan</h1>
-      <div class="sub">PhD Student in Physics, MIT</div>
-      <p class="intro">
-        I work on photonics, optical neural networks, and computational physics,
-        with interests in integrated optics, inverse design, and wave-based
-        information processing.
-      </p>
-      <div class="links">
-        <a href="mailto:lohsuan@mit.edu">Email</a>
-        <!-- <a href="https://github.com/yourusername">GitHub</a> -->
-        <a href="#">Google Scholar</a>
-        <!-- <a href="cv.pdf">CV</a> -->
+  <main id="top" class="container">
+    <header>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Personal Website</div>
+          <h1>Lo Hsuan</h1>
+          <p>
+            A minimal one-page academic website template. Replace this short introduction
+            with two or three sentences about who you are, what you work on, and what kinds
+            of problems you care about.
+          </p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-label">Currently</div>
+          <p>
+            PhD Student in Physics / Researcher in Photonics / Based in Cambridge, MA<br /><br />
+            You can also use this panel for a short statement, advisor information, or a current focus area.
+          </p>
+        </div>
       </div>
     </header>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am a PhD student in physics at MIT. My research focuses on theoretical
-        and computational photonics, especially problems involving wave
-        propagation, photonic systems, and physically implemented computation.
-      </p>
-      <p>
-        Previously, I studied physics at NTU and worked on research in photonics
-        and related computational methods.
-      </p>
+    <section id="background">
+      <div class="section-head">
+        <div class="section-title">Background</div>
+        <div class="section-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2026 — Present</div>
+              <div class="timeline-title">PhD in Physics, University Name</div>
+              <div class="timeline-desc">
+                A brief note about your current research direction, advisor, or department.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2025 — 2026</div>
+              <div class="timeline-title">Research Assistant, Lab or Institute</div>
+              <div class="timeline-desc">
+                A concise line about the main topic you worked on and what you contributed.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2020 — 2025</div>
+              <div class="timeline-title">B.Sc. in Physics, University Name</div>
+              <div class="timeline-desc">
+                Add one sentence about focus areas, thesis, awards, or notable experiences.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="research">
-      <h2>Research Interests</h2>
-      <div class="grid two">
-        <div class="card">
-          <div class="item-title">Integrated Photonics</div>
-          <div class="item-meta">
-            On-chip optical systems, waveguide devices, and photonic circuits.
-          </div>
-        </div>
-        <div class="card">
-          <div class="item-title">Optical Neural Networks</div>
-          <div class="item-meta">
-            Physical implementations of computation and matrix operations using light.
-          </div>
-        </div>
-        <div class="card">
-          <div class="item-title">Inverse Design</div>
-          <div class="item-meta">
-            Optimization-based design of photonic structures and devices.
-          </div>
-        </div>
-        <div class="card">
-          <div class="item-title">Computational Electromagnetics</div>
-          <div class="item-meta">
-            Numerical methods for wave physics and electromagnetic modeling.
+      <div class="section-head">
+        <div class="section-title">Research Interests</div>
+        <div class="section-body">
+          <div class="chips">
+            <div class="chip">Integrated Photonics</div>
+            <div class="chip">Optical Neural Networks</div>
+            <div class="chip">Inverse Design</div>
+            <div class="chip">Computational Physics</div>
+            <div class="chip">Non-Hermitian Systems</div>
+            <div class="chip">Quantum / Wave Phenomena</div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Selected Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="item-title">Optical Neural Network Architectures</div>
-          <div class="item-meta">
-            Exploring photonic implementations of structured matrix operations and
-            physically realizable neural-network layers.
-          </div>
-        </div>
-        <div class="card">
-          <div class="item-title">Adjoint-Based Inverse Design</div>
-          <div class="item-meta">
-            Using gradient-based optimization methods to design and improve photonic devices.
+      <div class="section-head">
+        <div class="section-title">Selected Project</div>
+        <div class="section-body">
+          <div class="project-grid">
+            <article class="project-card featured">
+              <div>
+                <div class="meta">Featured Work</div>
+                <h3>Project Title Goes Here</h3>
+                <p>
+                  Write 3–5 lines explaining the problem, your contribution, and why the project matters.
+                  Keep it concrete. For example: developed a simulation framework, led theory design,
+                  built an optimization pipeline, or demonstrated a new device concept.
+                </p>
+                <a class="project-link" href="#">View project ↗</a>
+              </div>
+              <div class="project-stats">
+                <div>
+                  <div class="stat-value">Role</div>
+                  <div class="stat-label">Theory lead / first author / collaborator</div>
+                </div>
+                <div>
+                  <div class="stat-value">Methods</div>
+                  <div class="stat-label">Simulation, optimization, fabrication, experiment</div>
+                </div>
+                <div>
+                  <div class="stat-value">Outcome</div>
+                  <div class="stat-label">Paper, prototype, open-source code, invited talk</div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
     <section id="publications">
-      <h2>Publications</h2>
-      <div class="pub">
-        Author, Author, <strong>Hsuan Lo</strong>, “Paper title,” <em>Journal</em>, Year.
-      </div>
-      <div class="pub">
-        Author, <strong>Hsuan Lo</strong>, “Another paper title,” <em>Journal</em>, Year.
+      <div class="section-head">
+        <div class="section-title">Publications</div>
+        <div class="section-body">
+          <div class="publication-card">
+            <div class="publication-list">
+              <div class="pub-item">
+                <span class="pub-title">Author, Your Name, Author. “Paper Title.” Journal Name (2026).</span>
+                <span>Optional note: topic, contribution, or <a href="#">arXiv / DOI</a>.</span>
+              </div>
+              <div class="pub-item">
+                <span class="pub-title">Author, Author, Your Name. “Another Publication Title.” Conference or Journal (2025).</span>
+                <span>Optional note: oral presentation, poster, or award.</span>
+              </div>
+              <div class="pub-item">
+                <span class="pub-title">Add more publications here.</span>
+                <span>You can also separate preprints, journal papers, and conference papers if you want.</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:lohsuan@mit.edu">lohsuan@mit.edu</a></p>
-      <!-- <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p> -->
+      <div class="section-head">
+        <div class="section-title">Contact</div>
+        <div class="section-body">
+          <div class="contact-card">
+            <div>
+              <h3>Get in touch</h3>
+              <p>
+                Add your preferred contact method here. You can also include office location,
+                CV link, Google Scholar, GitHub, or LinkedIn.
+              </p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:your.email@example.com">Email</a>
+              <a href="#">CV</a>
+              <a href="#">Google Scholar</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="footer">
-      © 2026 Hsuan Lo
-    </div>
-  </div>
+    <footer>
+      © 2026 Your Name. Built as a single-page HTML website.
+    </footer>
+  </main>
 </body>
 </html>
