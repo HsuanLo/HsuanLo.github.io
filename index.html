@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lo Hsuan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <nav class="nav">
-    <div class="container nav-inner">
+    <div class="nav-inner">
       <a href="#top" class="brand">Lo Hsuan</a>
       <div class="nav-links">
         <a href="#background">Background</a>
         <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
+        <a href="#project">Project</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
-  <main id="top" class="container">
-    <header>
-      <div class="hero">
+  <main class="page" id="top">
+    <header class="hero">
+      <div class="eyebrow">Academic Personal Website</div>
+      <h1>Lo Hsuan</h1>
+      <div class="subtitle">PhD Student in Physics, MIT</div>
+      <p class="intro">
+        I am a PhD student in the condensed matter theory group at MIT. I solve problems mainly with theory and
+        computational methods. Currently, I am interested in applying artificial intelligence methods for physics
+        problems.
+      </p>
+
+      <div class="hero-panel">
         <div>
-          <div class="eyebrow">Personal Website</div>
-          <h1>Lo Hsuan</h1>
-          <p>
-            A minimal one-page academic website template. Replace this short introduction
-            with two or three sentences about who you are, what you work on, and what kinds
-            of problems you care about.
-          </p>
+          <div class="hero-stat-label">Current Focus</div>
+          <div class="hero-stat-value"> Artificial Intelligence for Physics</div>
         </div>
-        <div class="hero-card">
-          <div class="hero-card-label">Currently</div>
-          <p>
-            PhD Student in Physics / Researcher in Photonics / Based in Cambridge, MA<br /><br />
-            You can also use this panel for a short statement, advisor information, or a current focus area.
-          </p>
+        <div>
+          <div class="hero-stat-label">Affiliation</div>
+          <div class="hero-stat-value">MIT</div>
+        </div>
+        <div>
+          <div class="hero-stat-label">Location</div>
+          <div class="hero-stat-value">Cambridge, MA</div>
         </div>
       </div>
     </header>
 
     <section id="background">
-      <div class="section-head">
-        <div class="section-title">Background</div>
-        <div class="section-body">
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-year">2026 — Present</div>
-              <div class="timeline-title">PhD in Physics, University Name</div>
-              <div class="timeline-desc">
-                A brief note about your current research direction, advisor, or department.
-              </div>
+      <div class="card">
+        <div class="section-head">
+          <h2>Background</h2>
+          <div class="section-note">A brief timeline of education and research.</div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2025–Present</div>
+            <div class="timeline-content">
+              <strong>Physics PhD Student, MIT</strong>
+              <p>Condensed matter theory group</p>
             </div>
-
-            <div class="timeline-item">
-              <div class="timeline-year">2025 — 2026</div>
-              <div class="timeline-title">Research Assistant, Lab or Institute</div>
-              <div class="timeline-desc">
-                A concise line about the main topic you worked on and what you contributed.
-              </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2024–2025</div>
+            <div class="timeline-content">
+              <strong>Research Assistant, Nanyang Technological University</strong>
+              <p>Worked on non-Hermitian physics and spectroscopy</p>
             </div>
-
-            <div class="timeline-item">
-              <div class="timeline-year">2020 — 2025</div>
-              <div class="timeline-title">B.Sc. in Physics, University Name</div>
-              <div class="timeline-desc">
-                Add one sentence about focus areas, thesis, awards, or notable experiences.
-              </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2020–2024</div>
+            <div class="timeline-content">
+              <strong>B.Sc. in Physics, Nanyang Technological University</strong>
+              <ul>
+                <li>Sponsored by the Singapore Ministry of Education (MOE) Tuition Grant</li>
+                <li>GPA of 4.88/5.00 (Highest Distinction)</li>
+                <li>Earned A+ grades in all mathematics and physics courses, including two graduate-level physics courses, as well as the final-year research project.</li>
+                <li>Thesis supervisor: Prof. Chong Yidong</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -79,107 +87,97 @@
     </section>
 
     <section id="research">
-      <div class="section-head">
-        <div class="section-title">Research Interests</div>
-        <div class="section-body">
-          <div class="chips">
-            <div class="chip">Integrated Photonics</div>
-            <div class="chip">Optical Neural Networks</div>
-            <div class="chip">Inverse Design</div>
-            <div class="chip">Computational Physics</div>
-            <div class="chip">Non-Hermitian Systems</div>
-            <div class="chip">Quantum / Wave Phenomena</div>
-          </div>
+      <div class="card">
+        <div class="section-head">
+          <h2>Research Interests</h2>
+          <div class="section-note">Selected areas of interest.</div>
+        </div>
+        <div class="interest-grid">
+          <div class="interest">AI for Physics</div>
+          <!-- <div class="interest">Computational Physics</div> -->
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <div class="section-head">
-        <div class="section-title">Selected Project</div>
-        <div class="section-body">
-          <div class="project-grid">
-            <article class="project-card featured">
-              <div>
-                <div class="meta">Featured Work</div>
-                <h3>Project Title Goes Here</h3>
-                <p>
-                  Write 3–5 lines explaining the problem, your contribution, and why the project matters.
-                  Keep it concrete. For example: developed a simulation framework, led theory design,
-                  built an optimization pipeline, or demonstrated a new device concept.
-                </p>
-                <a class="project-link" href="#">View project ↗</a>
-              </div>
-              <div class="project-stats">
-                <div>
-                  <div class="stat-value">Role</div>
-                  <div class="stat-label">Theory lead / first author / collaborator</div>
-                </div>
-                <div>
-                  <div class="stat-value">Methods</div>
-                  <div class="stat-label">Simulation, optimization, fabrication, experiment</div>
-                </div>
-                <div>
-                  <div class="stat-value">Outcome</div>
-                  <div class="stat-label">Paper, prototype, open-source code, invited talk</div>
-                </div>
-              </div>
-            </article>
+    <section id="project">
+      <div class="card">
+        <div class="section-head">
+          <h2>Selected Project</h2>
+          <div class="section-note">One representative work.</div>
+        </div>
+        <div class="project-layout">
+          <div class="project-body">
+            <h3 class="project-title">Project Title</h3>
+            <p>
+              Write a short paragraph describing one representative project: the problem, your contribution,
+              and the main outcome. For an academic site, this should read more like a concise research summary
+              than a startup pitch.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div>
+              <div class="meta-label">Role</div>
+              <div class="meta-value">Theory / Simulation / Experiment</div>
+            </div>
+            <div>
+              <div class="meta-label">Methods</div>
+              <div class="meta-value">Numerical modeling, optimization, data analysis</div>
+            </div>
+            <div>
+              <div class="meta-label">Outcome</div>
+              <div class="meta-value">Publication, prototype, or ongoing work</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="publications">
-      <div class="section-head">
-        <div class="section-title">Publications</div>
-        <div class="section-body">
-          <div class="publication-card">
-            <div class="publication-list">
-              <div class="pub-item">
-                <span class="pub-title">Author, Your Name, Author. “Paper Title.” Journal Name (2026).</span>
-                <span>Optional note: topic, contribution, or <a href="#">arXiv / DOI</a>.</span>
-              </div>
-              <div class="pub-item">
-                <span class="pub-title">Author, Author, Your Name. “Another Publication Title.” Conference or Journal (2025).</span>
-                <span>Optional note: oral presentation, poster, or award.</span>
-              </div>
-              <div class="pub-item">
-                <span class="pub-title">Add more publications here.</span>
-                <span>You can also separate preprints, journal papers, and conference papers if you want.</span>
-              </div>
-            </div>
+      <div class="card">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <div class="section-note">Selected papers and preprints.</div>
+        </div>
+        <div class="publication-list">
+          <div class="publication-item">
+            <span class="pub-title">Author, Lo Hsuan, Author. “Paper Title.” Journal Name, 2026.</span>
+            <p><a class="pub-link" href="#">Paper link</a></p>
+          </div>
+          <div class="publication-item">
+            <span class="pub-title">Author, Author, Lo Hsuan. “Another Paper Title.” Journal Name, 2025.</span>
+            <p><a class="pub-link" href="#">Paper link</a></p>
+          </div>
+          <div class="publication-item">
+            <span class="pub-title">Add more publications here as needed.</span>
+            <p>You can separate journal papers, conference papers, and preprints later if you want.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="section-head">
-        <div class="section-title">Contact</div>
-        <div class="section-body">
-          <div class="contact-card">
-            <div>
-              <h3>Get in touch</h3>
-              <p>
-                Add your preferred contact method here. You can also include office location,
-                CV link, Google Scholar, GitHub, or LinkedIn.
-              </p>
-            </div>
-            <div class="contact-links">
-              <a href="mailto:your.email@example.com">Email</a>
-              <a href="#">CV</a>
-              <a href="#">Google Scholar</a>
-              <a href="#">GitHub</a>
-            </div>
+      <div class="card contact-card">
+        <div>
+          <div class="section-head" style="margin-bottom: 10px; display: block;">
+            <h2>Contact</h2>
           </div>
+          <p class="contact-copy">
+            Add your preferred contact method and academic links here.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com">Email</a>
+          <a href="#">CV</a>
+          <a href="#">Google Scholar</a>
+          <a href="#">GitHub</a>
         </div>
       </div>
     </section>
 
     <footer>
-      © 2026 Your Name. Built as a single-page HTML website.
+      © 2026 Lo Hsuan
     </footer>
   </main>
 </body>
+
 </html>
