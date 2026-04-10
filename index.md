@@ -22,7 +22,7 @@ title: Home
   <h2 class="section-title">Background</h2>
   <div class="timeline">
     <div class="timeline-item">
-      <div class="timeline-date">2025–Present</div>
+      <div class="timeline-date">2025-Present</div>
       <div class="timeline-content">
         <h3>MIT Physics PhD</h3>
         <p>
@@ -30,13 +30,12 @@ title: Home
         </p>
       </div>
     </div>
-
     <div class="timeline-item">
-      <div class="timeline-date">2024–2025</div>
+      <div class="timeline-date">2024-2025</div>
       <div class="timeline-content">
-        <h3>Research Assistant</h3>
+        <h3>Project Manager, Nanyang Technological University</h3>
         <p>
-          Continued research in photonics and computational methods after undergraduate study.
+          Supervisor: Prof. Chong Yidong
         </p>
       </div>
     </div>
@@ -44,9 +43,9 @@ title: Home
     <div class="timeline-item">
       <div class="timeline-date">2020–2024</div>
       <div class="timeline-content">
-        <h3>NTU Physics</h3>
+        <h3>Bsc in Physics</h3>
         <p>
-          Built a foundation in physics, mathematics, and theoretical/computational research.
+          Thesis advisor: Prof. Chong Yidong
         </p>
       </div>
     </div>
