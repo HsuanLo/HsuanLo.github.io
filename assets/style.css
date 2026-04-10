@@ -85,6 +85,17 @@ body {
   margin-bottom: 48px;
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
 .hero h1,
 .page-intro h1,
 .post-title {
@@ -122,6 +133,16 @@ body {
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 24px;
+}
+
+.profile-photo {
+  width: 220px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.65));
 }
 
 .links a,
@@ -198,6 +219,15 @@ strong {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .profile-photo {
+    width: min(220px, 72vw);
   }
 
   .page-shell {

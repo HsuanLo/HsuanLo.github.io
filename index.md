@@ -4,18 +4,26 @@ title: Home
 ---
 
 <section class="hero">
-  <p class="eyebrow">Personal Academic Website</p>
-  <h1>Lo Hsuan</h1>
-  <p class="intro">
-    I am currently a physics PhD candidate in MIT under the condensed matter theory group. I solve problems with theory and computational methods. My current research interest is to study artificial intelligence for physics problems.
-  </p>
+  <div class="hero-copy">
+    <p class="eyebrow">Personal Academic Website</p>
+    <h1>Lo Hsuan</h1>
+    <p class="intro">
+      I am currently a physics PhD candidate in MIT under the condensed matter theory group. I solve problems with theory and computational methods. My current research interest is to study artificial intelligence for physics problems.
+    </p>
 
-  <div class="links">
-    <a href="mailto:lohsuan@mit.edu">Email</a>
-    <a href="https://github.com/hsuanlo">GitHub</a>
-    <a href="https://scholar.google.com/citations?user=wek1XTgAAAAJ&hl=en">Google Scholar</a>
-    <!-- <a href="#">CV</a> -->
+    <div class="links">
+      <a href="mailto:lohsuan@mit.edu">Email</a>
+      <a href="https://github.com/hsuanlo">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=wek1XTgAAAAJ&hl=en">Google Scholar</a>
+      <!-- <a href="#">CV</a> -->
+    </div>
   </div>
+
+  <img
+    class="profile-photo"
+    src="https://github.com/hsuanlo.png"
+    alt="Lo Hsuan profile photo"
+  >
 </section>
 
 <section class="section">
