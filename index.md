@@ -4,11 +4,10 @@ title: Home
 ---
 
 <section class="hero">
-  <p class="eyebrow">Physics PhD · Photonics · Optical Neural Networks</p>
+  <p class="eyebrow">MIT Physcis PhD Candidates</p>
   <h1>Lo Hsuan</h1>
   <p class="intro">
-    I work on photonics, inverse design, and optical computation.
-    This site is a minimal home for my research and writing.
+    I am 
   </p>
 
   <div class="links">
