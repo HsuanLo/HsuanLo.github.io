@@ -1,41 +1,46 @@
 ---
 layout: default
-title: Lo Hsuan
+title: Home
 ---
 
-# Lo Hsuan
+<section class="hero">
+  <span class="eyebrow">Physics PhD · Photonics · Optical Neural Networks</span>
+  <h1>Lo Hsuan</h1>
+  <p>
+    I work on photonics, inverse design, and optical computation.
+    This site collects my research interests, selected projects, writings, and publications.
+  </p>
 
-Physics PhD @ MIT  
-Photonics · Optical Neural Networks · Inverse Design
+  <div class="button-row">
+    <a class="button button-primary" href="/research/">View Research</a>
+    <a class="button button-secondary" href="/publications/">Publications</a>
+  </div>
+</section>
 
----
+<section class="section">
+  <h2 class="section-title">Selected Projects</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>On-chip spectrometer</h3>
+      <p>Inverse-designed compact infrared spectrometer for integrated photonics.</p>
+    </div>
+    <div class="card">
+      <h3>Optical neural network architecture</h3>
+      <p>Exploring FFT and diagonal mixing layers for efficient physical matrix operations.</p>
+    </div>
+  </div>
+</section>
 
-## Research Interests
-
-- Integrated photonics
-- Optical neural networks
-- Non-Hermitian systems
-- Inverse design
-
----
-
-## Selected Projects
-
-**On-chip spectrometer via inverse design**  
-Theory lead. Designed compact IR spectrometer.
-
-**Optical neural network architecture**  
-Exploring FFT + diagonal layers for scalable MVM.
-
----
-
-## Publications
-
-*(Coming soon)*
-
----
-
-## Contact
-
-- Email: your@email.com
-- GitHub: https://github.com/yourname
+<section class="section">
+  <h2 class="section-title">Recent Writing</h2>
+  <div class="card">
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
