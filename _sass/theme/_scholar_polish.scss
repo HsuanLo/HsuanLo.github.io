@@ -1,0 +1,542 @@
+/* ==========================================================================
+   SCHOLAR POST-LAYOUT POLISH
+   These overrides load after the template layouts so the custom theme wins.
+   ========================================================================== */
+
+/* One link behavior: plain by default, blue + single underline on hover/focus. */
+a,
+.page__content a,
+.archive a,
+.author__urls a,
+.page__taxonomy a,
+.page__meta a,
+.footer a,
+.nav__list a,
+.pagination a {
+  color: var(--global-link-color);
+  border-bottom: 0;
+  text-decoration: none;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus,
+.page__content a:hover,
+.page__content a:focus,
+.archive a:hover,
+.archive a:focus,
+.author__urls a:hover,
+.author__urls a:focus,
+.page__taxonomy a:hover,
+.page__taxonomy a:focus,
+.page__meta a:hover,
+.page__meta a:focus,
+.footer a:hover,
+.footer a:focus,
+.nav__list a:hover,
+.nav__list a:focus,
+.pagination a:hover,
+.pagination a:focus {
+  color: var(--global-link-color-hover);
+  background: transparent;
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+.btn,
+a.btn,
+.btn:hover,
+.btn:focus,
+a.btn:hover,
+a.btn:focus {
+  text-decoration: none;
+}
+
+/* Masthead and current-page state. */
+.masthead,
+.greedy-nav,
+.greedy-nav button,
+.masthead__menu-item {
+  background: transparent;
+  box-shadow: none;
+}
+
+.masthead a,
+.greedy-nav a,
+.greedy-nav .hidden-links a {
+  color: var(--global-masthead-link-color);
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+.masthead a:hover,
+.masthead a:focus,
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.greedy-nav .hidden-links a:hover,
+.greedy-nav .hidden-links a:focus {
+  color: var(--global-link-color-hover);
+  background: transparent;
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover,
+.masthead__menu-item.selected a:focus {
+  color: var(--global-text-color);
+  background: transparent;
+  border-bottom: 0;
+  font-weight: 650;
+  opacity: 1;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.greedy-nav .visible-links a::before,
+.greedy-nav .visible-links a:hover::before,
+.greedy-nav .visible-links a:focus::before,
+.greedy-nav .hidden-links::before,
+.greedy-nav .hidden-links::after,
+.greedy-nav button::before,
+.greedy-nav button::after {
+  display: none;
+  content: none;
+  transform: none;
+}
+
+/* Overflow menu: simple flat popover, no shadow or pointer. */
+.greedy-nav button,
+.greedy-nav button:hover,
+.greedy-nav button:focus {
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  outline: none;
+  box-shadow: none;
+  filter: none;
+  text-shadow: none;
+  transform: translateY(-50%);
+}
+
+.greedy-nav button .navicon,
+.greedy-nav button .navicon::before,
+.greedy-nav button .navicon::after {
+  height: 2px;
+  background: var(--global-text-color-light);
+  border-radius: 999px;
+  box-shadow: none;
+  filter: none;
+  text-shadow: none;
+}
+
+.greedy-nav .hidden-links {
+  margin-top: 0.45rem;
+  padding: 0.35rem;
+  min-width: 11rem;
+  border: 1px solid rgba(210, 210, 215, 0.72);
+  border-radius: 14px;
+  background: rgba(251, 251, 253, 0.96);
+  box-shadow: none;
+  filter: none;
+  text-shadow: none;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.greedy-nav .hidden-links li {
+  border-bottom: 0;
+}
+
+.greedy-nav .hidden-links a {
+  margin: 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.greedy-nav .hidden-links a:hover,
+.greedy-nav .hidden-links a:focus {
+  background: transparent;
+}
+
+/* Sidebar: aligned, direct profile stack. */
+.sidebar [itemscope][itemtype="http://schema.org/Person"] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.sidebar .author__avatar,
+.sidebar .author__content,
+.sidebar .author__urls-wrapper {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.sidebar .author__avatar {
+  margin-bottom: 1rem;
+}
+
+.sidebar .author__avatar img {
+  display: block;
+  width: 132px;
+  max-width: 132px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 0 !important;
+  border-radius: 22px;
+  padding: 0 !important;
+  box-shadow: none;
+}
+
+.sidebar .author__name {
+  margin: 0 0 0.3rem;
+  color: var(--global-text-color);
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.16;
+}
+
+.sidebar .author__bio,
+.sidebar .author__pronouns {
+  margin: 0 0 0.8rem;
+  color: var(--global-text-color-light);
+  line-height: 1.45;
+}
+
+.sidebar .author__urls-wrapper {
+  margin-top: 0.15rem;
+  cursor: default;
+}
+
+.sidebar .author__urls-wrapper button {
+  display: none;
+}
+
+.sidebar .author__urls {
+  position: static;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: auto;
+}
+
+.sidebar .author__urls::before,
+.sidebar .author__urls::after {
+  display: none;
+  content: none;
+}
+
+.sidebar .author__urls li,
+.sidebar .author__desktop {
+  color: var(--global-text-color-light);
+  line-height: 1.45;
+}
+
+.sidebar .author__urls .icon-pad-right {
+  display: none;
+}
+
+.sidebar .author__urls a {
+  display: inline-block;
+  padding: 0.08rem 0;
+  font-size: 0.82rem;
+}
+
+/* Quiet template chrome. */
+.page__content h2,
+.archive__subtitle,
+.feature__wrapper,
+.page__share {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.archive__item:hover .archive__item-title,
+.archive__item:hover .archive__item-title a {
+  color: var(--global-link-color-hover);
+  text-decoration: underline;
+}
+
+a > code,
+figcaption > code,
+li > code,
+p > code,
+td > code,
+.notice,
+.notice--primary,
+.notice--info,
+.notice--warning,
+.notice--success,
+.notice--danger,
+.toc {
+  border: 0;
+  box-shadow: none;
+}
+
+/* MathJax rendering fit and color. */
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  color: var(--global-text-color);
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  margin: 1.35rem 0;
+  padding: 0.1rem 0;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links {
+  border-color: rgba(58, 58, 60, 0.82);
+  background: rgba(22, 22, 23, 0.96);
+}
+
+@media screen and (max-width: 924px) {
+  .sidebar [itemscope][itemtype="http://schema.org/Person"] {
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr);
+    column-gap: 1rem;
+    align-items: center;
+  }
+
+  .sidebar .author__avatar {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+
+  .sidebar .author__avatar img {
+    width: 76px;
+    max-width: 76px;
+    border-radius: 18px;
+  }
+
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper {
+    min-width: 0;
+  }
+
+  .sidebar .author__urls-wrapper {
+    margin-top: 0.45rem;
+  }
+}
+
+/* Archive/publication titles should use only the normal single link hover. */
+.archive__item:hover .archive__item-title,
+.archive__item:hover .archive__item-title a,
+.archive__item-title:hover,
+.archive__item-title a:hover,
+.archive__item-title a:focus {
+  border-bottom: 0;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+  box-shadow: none;
+}
+
+.archive__item-title a + a,
+.archive__item-title a + a:hover,
+.archive__item-title a + a:focus {
+  text-decoration: none;
+}
+
+/* Sidebar information hierarchy: identity, metadata, actions. */
+.sidebar .author__avatar img {
+  width: 148px;
+  max-width: 148px;
+  border-radius: 24px;
+}
+
+.sidebar .author__content {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar .author__bio {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .author__urls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.sidebar .author__desktop {
+  order: 0;
+  margin-bottom: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.sidebar .author__desktop + .author__desktop {
+  margin-top: -0.06rem;
+}
+
+.sidebar .author__urls li:not(.author__desktop) {
+  order: 1;
+  margin-bottom: 0;
+}
+
+.sidebar .author__urls li.author__desktop + li:not(.author__desktop),
+.sidebar .author__urls li:not(.author__desktop):first-of-type {
+  margin-top: 0.72rem;
+}
+
+.sidebar .author__urls a {
+  color: var(--global-link-color);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.sidebar .author__urls a:hover,
+.sidebar .author__urls a:focus {
+  color: var(--global-link-color-hover);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 924px) {
+  .sidebar .author__avatar img {
+    width: 84px;
+    max-width: 84px;
+    border-radius: 20px;
+  }
+
+  .sidebar .author__urls {
+    gap: 0;
+  }
+
+  .sidebar .author__desktop {
+    display: inline;
+  }
+}
+
+/* Archive/publication titles: calm by default, interactive on hover only. */
+.archive__item-title a,
+.archive__item-title a:visited,
+.page__content .archive__item-title a,
+.page__content .archive__item-title a:visited {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.archive__item-title a:hover,
+.archive__item-title a:focus,
+.page__content .archive__item-title a:hover,
+.page__content .archive__item-title a:focus,
+.archive__item:hover .archive__item-title a {
+  color: var(--global-link-color-hover);
+  text-decoration: underline;
+}
+
+.archive__item-title a[rel="permalink"],
+.archive__item-title a[rel="permalink"]:hover,
+.archive__item-title a[rel="permalink"]:focus {
+  color: var(--global-text-color-light);
+  opacity: 0.55;
+  text-decoration: none;
+}
+
+/* More minimal archive lists: titles are primary text, not blue buttons. */
+.archive__item-title a,
+.archive__item-title a:visited,
+.archive__item-title a:hover,
+.archive__item-title a:focus,
+.page__content .archive__item-title a,
+.page__content .archive__item-title a:visited,
+.page__content .archive__item-title a:hover,
+.page__content .archive__item-title a:focus,
+.archive__item:hover .archive__item-title,
+.archive__item:hover .archive__item-title a {
+  color: var(--global-text-color);
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+.archive__item-title a[rel="permalink"],
+.archive__item-title a[rel="permalink"]:hover,
+.archive__item-title a[rel="permalink"]:focus,
+.archive__item-title a[rel="permalink"] .fa,
+.archive__item-title a[rel="permalink"] .fas {
+  display: none;
+}
+
+.archive__item-title {
+  margin-bottom: 0.32rem;
+}
+
+.archive__item-excerpt {
+  color: var(--global-text-color-light);
+}
+
+.archive__item p {
+  margin-top: 0.18rem;
+}
+
+/* Restore title links that use rel="permalink" as their primary URL. */
+.archive__item-title > a[rel="permalink"] {
+  display: inline;
+  color: var(--global-text-color);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.archive__item-title > a[rel="permalink"]:hover,
+.archive__item-title > a[rel="permalink"]:focus {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+/* Definitive archive/post title behavior: visible, clickable, visually stable. */
+.archive__item-title,
+.archive__item:hover .archive__item-title {
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+}
+
+.archive__item-title > a,
+.archive__item-title > a:link,
+.archive__item-title > a:visited,
+.archive__item-title > a:hover,
+.archive__item-title > a:focus,
+.archive__item-title > a:active,
+.page__content .archive__item-title > a,
+.page__content .archive__item-title > a:link,
+.page__content .archive__item-title > a:visited,
+.page__content .archive__item-title > a:hover,
+.page__content .archive__item-title > a:focus,
+.page__content .archive__item-title > a:active,
+.archive__item:hover .archive__item-title > a {
+  display: inline !important;
+  color: var(--global-text-color) !important;
+  opacity: 1 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.archive__item-title > a:has(.fa),
+.archive__item-title > a:has(.fas),
+.archive__item-title > a:has(.sr-only) {
+  display: none !important;
+}
+
+.archive__item-title > a .fa,
+.archive__item-title > a .fas,
+.archive__item-title > a .sr-only {
+  display: none !important;
+}

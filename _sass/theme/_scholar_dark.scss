@@ -1,0 +1,244 @@
+/* ==========================================================================
+   SCHOLAR THEME - APPLE-LIKE DARK VERSION
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #2997ff;
+$gray                       : #a1a1a6;
+$dark-gray                  : #f5f5f7;
+$darker-gray                : #ffffff;
+$light-gray                 : #86868b;
+
+$background                 : #000000;
+$background-light           : #161617;
+$background-lighter         : #1d1d1f;
+$text                       : #f5f5f7;
+$link                       : #2997ff;
+$link-dark                  : #66b8ff;
+$link-light                 : #a6a6ff;
+
+/* Color codes used for the site */
+$danger-color               : #ff453a;
+$info-color                 : #2997ff;
+$notice-color               : #a1a1a6;
+$success-color              : #32d74b;
+$warning-color              : #ff9f0a;
+
+/* Other basic settings for the template */
+$border-radius              : 12px;
+$box-shadow                 : 0 18px 50px rgba(0, 0, 0, 0.28);
+$global-transition          : all 0.18s ease;
+$masthead-height            : 56px;
+$navicon-width              : 24px;
+$navicon-height             : 2px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #161617;
+    --global-border-color               : #2c2c2e;
+    --global-dark-border-color          : #3a3a3c;
+    --global-code-background-color      : #1d1d1f;
+    --global-code-text-color            : #{$text};
+    --global-fig-caption-color          : #{$gray};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-dark};
+    --global-link-color-visited         : #{$link-light};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #{$gray};
+    --global-thead-color                : #{$background-lighter};
+}
+
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+    background: #000;
+}
+
+html[data-theme="dark"] .masthead {
+    background: rgba(22, 22, 23, 0.72);
+    border-bottom-color: rgba(58, 58, 60, 0.7);
+}
+
+html[data-theme="dark"] .masthead__menu-item {
+    background: transparent;
+}
+
+html[data-theme="dark"] .masthead__menu-item.selected a,
+html[data-theme="dark"] .masthead__menu-item.selected a:hover,
+html[data-theme="dark"] .page__title,
+html[data-theme="dark"] .archive__item-title,
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] .sidebar .author__name {
+    color: #f5f5f7;
+}
+
+html[data-theme="dark"] .page__content p,
+html[data-theme="dark"] .page__content li {
+    color: #d2d2d7;
+}
+
+html[data-theme="dark"] .page__content h2 {
+    border-bottom-color: #2c2c2e;
+}
+
+html[data-theme="dark"] .author__bio,
+html[data-theme="dark"] .author__urls,
+html[data-theme="dark"] .sidebar p,
+html[data-theme="dark"] .sidebar li {
+    color: #a1a1a6;
+}
+
+html[data-theme="dark"] .author__urls a {
+    color: #d2d2d7;
+}
+
+html[data-theme="dark"] .author__urls a:hover {
+    color: #2997ff;
+}
+
+html[data-theme="dark"] .author__avatar img,
+html[data-theme="dark"] .page__content img,
+html[data-theme="dark"] figure img {
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* Minimal Apple-style polish: dark-mode refinements. */
+html[data-theme="dark"] .archive__subtitle,
+html[data-theme="dark"] .archive__item-excerpt,
+html[data-theme="dark"] .page__meta,
+html[data-theme="dark"] .page__taxonomy,
+html[data-theme="dark"] .page__share-title {
+    color: #86868b;
+}
+
+html[data-theme="dark"] .author__avatar img {
+    box-shadow: none;
+}
+
+html[data-theme="dark"] .author__urls {
+    background: transparent;
+}
+
+html[data-theme="dark"] hr {
+    border-top-color: rgba(58, 58, 60, 0.72);
+}
+
+/* Industrial polish pass: dark-mode nav overflow and sidebar alignment. */
+html[data-theme="dark"] .greedy-nav,
+html[data-theme="dark"] .greedy-nav button,
+html[data-theme="dark"] .greedy-nav .masthead__menu-item {
+    background: transparent;
+}
+
+html[data-theme="dark"] .greedy-nav button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links {
+    border-color: rgba(58, 58, 60, 0.82);
+    background: rgba(22, 22, 23, 0.96);
+    box-shadow: none;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links a {
+    color: #f5f5f7;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links a:hover {
+    background: #1d1d1f;
+    color: #2997ff;
+}
+
+/* Unified link behavior: dark-mode color consistency. */
+html[data-theme="dark"] a,
+html[data-theme="dark"] .page__content a,
+html[data-theme="dark"] .archive a,
+html[data-theme="dark"] .author__urls a,
+html[data-theme="dark"] .footer a,
+html[data-theme="dark"] .greedy-nav a,
+html[data-theme="dark"] .greedy-nav .hidden-links a,
+html[data-theme="dark"] .nav__list a,
+html[data-theme="dark"] .pagination a {
+    color: var(--global-link-color);
+}
+
+html[data-theme="dark"] .masthead a,
+html[data-theme="dark"] .greedy-nav a,
+html[data-theme="dark"] .greedy-nav .hidden-links a,
+html[data-theme="dark"] .masthead__menu-item.selected a {
+    color: var(--global-masthead-link-color);
+}
+
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] a:focus,
+html[data-theme="dark"] .page__content a:hover,
+html[data-theme="dark"] .page__content a:focus,
+html[data-theme="dark"] .archive a:hover,
+html[data-theme="dark"] .archive a:focus,
+html[data-theme="dark"] .author__urls a:hover,
+html[data-theme="dark"] .author__urls a:focus,
+html[data-theme="dark"] .footer a:hover,
+html[data-theme="dark"] .footer a:focus,
+html[data-theme="dark"] .greedy-nav a:hover,
+html[data-theme="dark"] .greedy-nav a:focus,
+html[data-theme="dark"] .greedy-nav .hidden-links a:hover,
+html[data-theme="dark"] .greedy-nav .hidden-links a:focus,
+html[data-theme="dark"] .nav__list a:hover,
+html[data-theme="dark"] .nav__list a:focus,
+html[data-theme="dark"] .pagination a:hover,
+html[data-theme="dark"] .pagination a:focus,
+html[data-theme="dark"] .masthead a:hover,
+html[data-theme="dark"] .masthead a:focus {
+    color: var(--global-link-color-hover);
+    background: transparent;
+    border-bottom: 0;
+    text-decoration: underline;
+}
+
+html[data-theme="dark"] .masthead__menu-item.selected a,
+html[data-theme="dark"] .masthead__menu-item.selected a:hover,
+html[data-theme="dark"] .masthead__menu-item.selected a:focus {
+    color: var(--global-text-color);
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links a:hover,
+html[data-theme="dark"] .greedy-nav .hidden-links a:focus {
+    background: transparent;
+}
+
+/* Active navigation and overflow icon correction: dark mode. */
+html[data-theme="dark"] .masthead__menu-item.selected a,
+html[data-theme="dark"] .masthead__menu-item.selected a:hover,
+html[data-theme="dark"] .masthead__menu-item.selected a:focus,
+html[data-theme="dark"] .greedy-nav .hidden-links .selected a,
+html[data-theme="dark"] .greedy-nav .hidden-links .selected a:hover,
+html[data-theme="dark"] .greedy-nav .hidden-links .selected a:focus {
+    color: var(--global-text-color);
+    background: transparent;
+    text-decoration: none;
+}
+
+html[data-theme="dark"] .greedy-nav button,
+html[data-theme="dark"] .greedy-nav button:hover,
+html[data-theme="dark"] .greedy-nav button:focus {
+    background: transparent;
+    box-shadow: none;
+    filter: none;
+    text-shadow: none;
+}
+
+html[data-theme="dark"] .greedy-nav button .navicon,
+html[data-theme="dark"] .greedy-nav button .navicon::before,
+html[data-theme="dark"] .greedy-nav button .navicon::after {
+    background: var(--global-text-color-light);
+    box-shadow: none;
+    filter: none;
+}
