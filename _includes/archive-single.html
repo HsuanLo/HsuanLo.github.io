@@ -34,10 +34,6 @@
       {% endif %}
     </h2>
     
-    {% if post.read_time %}
-      <p class="archive__item-meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-
     {% if post.collection == 'teaching' %}
       <p class="archive__item-meta">
         {% if post.type %}{{ post.type }}{% endif %}
@@ -49,6 +45,14 @@
         {% if post.venue %}Published in <i>{{ post.venue }}</i>{% endif %}
         {% if post.date %}{% if post.venue %} <span aria-hidden="true">&middot;</span> {% endif %}{{ post.date | date: "%Y" }}{% endif %}
       </p>
+      {% if post.authors %}
+        <p class="archive__item-meta archive__item-authors">
+          {% for author in post.authors %}
+            {% if forloop.index > 1 %}<span aria-hidden="true">, </span>{% endif %}
+            {% if author.me %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
     {% elsif post.collection == 'talks' %}
       <p class="archive__item-meta">
         {{ post.type | default: "Talk" }}
@@ -57,10 +61,15 @@
         {% if post.date %} <span aria-hidden="true">&middot;</span> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% endif %}
       </p>
     {% elsif post.date %}
-      <p class="archive__item-meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
+      <p class="archive__item-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
     {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    {% if include.excerpt_source == "first_paragraph" and post.content %}
+      {% assign excerpt_paragraph = post.content | markdownify | split: "</p>" | first | append: "</p>" %}
+      <div class="archive__item-excerpt" itemprop="description">{{ excerpt_paragraph }}</div>
+    {% elsif post.collection == 'publications' and post.content %}
+      <div class="archive__item-excerpt" itemprop="description">{{ post.content | markdownify }}</div>
+    {% elsif post.excerpt and site.read_more != 'enabled' %}
       <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
       <div class="archive__item-excerpt" itemprop="description">
