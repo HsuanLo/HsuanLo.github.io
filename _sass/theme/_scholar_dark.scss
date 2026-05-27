@@ -1,9 +1,9 @@
 /* ==========================================================================
-   SCHOLAR THEME - APPLE-LIKE DARK VERSION
+   SCHOLAR THEME - PERSONAL DARK VERSION
    ========================================================================== */
 
 /* Color codes used for the theme */
-$primary-color              : #2997ff;
+$primary-color              : #8EA2FF;
 $gray                       : #a1a1a6;
 $dark-gray                  : #f5f5f7;
 $darker-gray                : #ffffff;
@@ -13,13 +13,13 @@ $background                 : #000000;
 $background-light           : #161617;
 $background-lighter         : #1d1d1f;
 $text                       : #f5f5f7;
-$link                       : #2997ff;
-$link-dark                  : #66b8ff;
-$link-light                 : #a6a6ff;
+$link                       : #8EA2FF;
+$link-dark                  : #B4C0FF;
+$link-light                 : #C6B8FF;
 
 /* Color codes used for the site */
 $danger-color               : #ff453a;
-$info-color                 : #2997ff;
+$info-color                 : #8EA2FF;
 $notice-color               : #a1a1a6;
 $success-color              : #32d74b;
 $warning-color              : #ff9f0a;
@@ -101,7 +101,7 @@ html[data-theme="dark"] .author__urls a {
 }
 
 html[data-theme="dark"] .author__urls a:hover {
-    color: #2997ff;
+    color: #8EA2FF;
 }
 
 html[data-theme="dark"] .author__avatar img,
@@ -154,7 +154,7 @@ html[data-theme="dark"] .greedy-nav .hidden-links a {
 
 html[data-theme="dark"] .greedy-nav .hidden-links a:hover {
     background: #1d1d1f;
-    color: #2997ff;
+    color: #8EA2FF;
 }
 
 /* Unified link behavior: dark-mode color consistency. */

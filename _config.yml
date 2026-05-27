@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Lo Hsuan"
   pronouns         : # example: "she/her"  
-  bio              : "Physics PhD student"
+  bio              : "Physics PhD student at MIT"
   location         : "Cambridge, MA"
-  employer         : "MIT"
+  employer         : # URL
   uri              : # URL
   email            : "lohsuan@mit.edu" 
 

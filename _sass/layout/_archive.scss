@@ -39,6 +39,12 @@
   }
 }
 
+.archive__notice {
+  margin: 0 0 1.5em;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+}
+
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
@@ -57,12 +63,47 @@
   }
 }
 
+.archive__item-meta {
+  margin: 0 0 0.5em;
+  color: var(--global-text-color-light);
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.45;
+}
+
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
 
+  p {
+    margin: 0 0 0.75em;
+  }
+
   & + p {
     text-indent: 0;
+  }
+}
+
+.scholarly-resources {
+  margin-top: 0.5em;
+  color: var(--global-text-color-light);
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.45;
+
+  p {
+    margin: 0 0 0.35em;
+  }
+}
+
+.scholarly-resources__citation {
+  color: var(--global-text-color);
+}
+
+.scholarly-resources__links {
+  span {
+    margin: 0 0.35em;
+    color: var(--global-border-color);
   }
 }
 

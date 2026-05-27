@@ -3,6 +3,21 @@
    These overrides load after the template layouts so the custom theme wins.
    ========================================================================== */
 
+
+/* A warmer academic display face for headings and archive titles. */
+.page__title,
+.archive__item-title,
+h1,
+h2,
+h3,
+h4 {
+  font-family: $header-font-family;
+}
+
+.archive__item-title {
+  line-height: 1.22;
+}
+
 /* One link behavior: plain by default, blue + single underline on hover/focus. */
 a,
 .page__content a,

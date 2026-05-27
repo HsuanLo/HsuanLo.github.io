@@ -1,9 +1,9 @@
 /* ==========================================================================
-   SCHOLAR THEME - APPLE-LIKE LIGHT VERSION
+   SCHOLAR THEME - PERSONAL LIGHT VERSION
    ========================================================================== */
 
 /* Color codes used for the theme */
-$primary-color              : #0071e3;
+$primary-color              : #3B5BDB;
 $gray                       : #6e6e73;
 $dark-gray                  : #1d1d1f;
 $darker-gray                : #111113;
@@ -12,7 +12,7 @@ $lighter-gray               : #d2d2d7;
 
 /* Color codes used for the site */
 $danger-color               : #d70015;
-$info-color                 : #0071e3;
+$info-color                 : #3B5BDB;
 $notice-color               : #6e6e73;
 $success-color              : #248a3d;
 $warning-color              : #bf5b00;
@@ -44,11 +44,11 @@ $caption-font-family        : $sans-serif;
     --global-code-background-color      : #f5f5f7;
     --global-code-text-color            : #1d1d1f;
     --global-fig-caption-color          : #6e6e73;
-    --global-link-color                 : #0071e3;
-    --global-link-color-hover           : #005bb5;
-    --global-link-color-visited         : #5856d6;
+    --global-link-color                 : #3B5BDB;
+    --global-link-color-hover           : #2746B8;
+    --global-link-color-visited         : #5F3DC4;
     --global-masthead-link-color        : #1d1d1f;
-    --global-masthead-link-color-hover  : #0071e3;
+    --global-masthead-link-color-hover  : #3B5BDB;
     --global-text-color                 : #1d1d1f;
     --global-text-color-light           : #6e6e73;
     --global-thead-color                : #f5f5f7;
@@ -186,7 +186,7 @@ figure img {
 }
 
 .author__urls a:hover {
-    color: #0071e3;
+    color: #3B5BDB;
 }
 
 .notice,
@@ -421,7 +421,7 @@ hr {
 
 .greedy-nav .hidden-links a:hover {
     background: #f5f5f7;
-    color: #0071e3;
+    color: #3B5BDB;
 }
 
 .sidebar [itemscope][itemtype="http://schema.org/Person"] {
