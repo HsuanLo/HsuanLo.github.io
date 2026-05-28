@@ -439,6 +439,63 @@ html[data-theme="dark"] .greedy-nav .hidden-links {
   }
 }
 
+@media screen and (min-width: 925px) and (max-width: 1023px) {
+  .sidebar .author__avatar img {
+    width: 112px;
+    max-width: 112px;
+    border-radius: 20px;
+  }
+
+  .sidebar .author__name {
+    font-size: 0.98rem;
+  }
+
+  .sidebar .author__bio,
+  .sidebar .author__pronouns {
+    margin-bottom: 0.45rem;
+    line-height: 1.35;
+  }
+
+  .sidebar .author__urls {
+    gap: 0;
+  }
+
+  .sidebar .author__urls a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar [itemscope][itemtype="http://schema.org/Person"] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar .author__avatar {
+    grid-row: auto;
+    margin-bottom: 0.8rem;
+  }
+
+  .sidebar .author__avatar img {
+    width: 118px;
+    max-width: 118px;
+    border-radius: 22px;
+  }
+
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper {
+    width: 100%;
+  }
+
+  .sidebar .author__bio,
+  .sidebar .author__pronouns {
+    max-width: 34rem;
+    margin-bottom: 0.65rem;
+    line-height: 1.5;
+  }
+}
+
 /* Archive/publication titles: calm by default, interactive on hover only. */
 .archive__item-title a,
 .archive__item-title a:visited,
