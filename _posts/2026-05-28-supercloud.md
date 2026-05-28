@@ -1,7 +1,7 @@
 ---
-title: 'Using Jax on the MIT Supercloud'
-date: 2026-05-27
-permalink: /posts/2026/05/blog-post-1/
+title: 'Extend Compute Node Time on the MIT Supercloud'
+date: 2026-05-28
+permalink: /posts/2026/05/extend-compute-node-time/
 tags:
   - MIT Supercloud
 ---
