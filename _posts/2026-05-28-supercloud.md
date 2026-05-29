@@ -39,7 +39,7 @@ srun --pty bash
 Now the prompt should become something like:
 
 ```text
-(periodicwaveboson) (py313) hlo1@d-12-1-1:~$
+user@d-12-1-1:~$
 ```
 
 You are now inside the GPU compute node.
